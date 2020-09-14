@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		99494D91250E0A540035A86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494D90250E0A540035A86D /* AppDelegate.swift */; };
 		99494D93250E0A540035A86D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494D92250E0A540035A86D /* SceneDelegate.swift */; };
-		99494D95250E0A540035A86D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494D94250E0A540035A86D /* ViewController.swift */; };
 		99494D98250E0A540035A86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99494D96250E0A540035A86D /* Main.storyboard */; };
 		99494D9B250E0A540035A86D /* EnglishWordBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99494D99250E0A540035A86D /* EnglishWordBook.xcdatamodeld */; };
 		99494D9D250E0A550035A86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99494D9C250E0A550035A86D /* Assets.xcassets */; };
 		99494DA0250E0A550035A86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99494D9E250E0A550035A86D /* LaunchScreen.storyboard */; };
 		99494DAB250E0A550035A86D /* EnglishWordBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494DAA250E0A550035A86D /* EnglishWordBookTests.swift */; };
+		99494DB6250E392A0035A86D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494DB5250E392A0035A86D /* MainTabBarController.swift */; };
+		99494DB8250E5BD90035A86D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99494DB7250E5BD90035A86D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		99494D8D250E0A540035A86D /* EnglishWordBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishWordBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99494D90250E0A540035A86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99494D92250E0A540035A86D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99494D94250E0A540035A86D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99494D97250E0A540035A86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99494D9A250E0A540035A86D /* EnglishWordBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnglishWordBook.xcdatamodel; sourceTree = "<group>"; };
 		99494D9C250E0A550035A86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		99494DA6250E0A550035A86D /* EnglishWordBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishWordBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99494DAA250E0A550035A86D /* EnglishWordBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishWordBookTests.swift; sourceTree = "<group>"; };
 		99494DAC250E0A550035A86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99494DB5250E392A0035A86D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		99494DB7250E5BD90035A86D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +85,13 @@
 			children = (
 				99494D90250E0A540035A86D /* AppDelegate.swift */,
 				99494D92250E0A540035A86D /* SceneDelegate.swift */,
-				99494D94250E0A540035A86D /* ViewController.swift */,
 				99494D96250E0A540035A86D /* Main.storyboard */,
 				99494D9C250E0A550035A86D /* Assets.xcassets */,
 				99494D9E250E0A550035A86D /* LaunchScreen.storyboard */,
 				99494DA1250E0A550035A86D /* Info.plist */,
 				99494D99250E0A540035A86D /* EnglishWordBook.xcdatamodeld */,
+				99494DB5250E392A0035A86D /* MainTabBarController.swift */,
+				99494DB7250E5BD90035A86D /* LoginViewController.swift */,
 			);
 			path = EnglishWordBook;
 			sourceTree = "<group>";
@@ -203,10 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99494D95250E0A540035A86D /* ViewController.swift in Sources */,
 				99494D9B250E0A540035A86D /* EnglishWordBook.xcdatamodeld in Sources */,
 				99494D91250E0A540035A86D /* AppDelegate.swift in Sources */,
 				99494D93250E0A540035A86D /* SceneDelegate.swift in Sources */,
+				99494DB8250E5BD90035A86D /* LoginViewController.swift in Sources */,
+				99494DB6250E392A0035A86D /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
